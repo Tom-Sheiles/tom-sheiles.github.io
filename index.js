@@ -6,7 +6,6 @@ window.onresize = SetCanvasSize;
 var stars = []
 var numberOfStars = 900;
 var minSpeed = 2;
-var maxSpeed = 2;
 var minSize = 0.1;
 var centerSquareAmount = 350;
 var shouldWarp = false;
@@ -56,7 +55,6 @@ function renderLoop()
         {
             stars[i].posX = RandomRange((canvas.width/2)-centerSquareAmount, (canvas.width/2)+centerSquareAmount);
             stars[i].posY = RandomRange((canvas.height/2)-centerSquareAmount, (canvas.height/2)+centerSquareAmount);
-            stars[i].s = RandomRange(minSpeed, maxSpeed)
             stars[i].size = minSize;
             stars[i].s = minSpeed;
 
